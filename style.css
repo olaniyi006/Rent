@@ -7,11 +7,17 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.main-container{
+    display: flex;
+    /* flex-direction: column; */
+}
+
 .container{
     background-color: #fff;
     width: 30%;
     margin: auto;
     padding: 20px 50px;
+    height: 100vh;
 }
 
 .content{
@@ -38,7 +44,7 @@ img{
     height:60px;
 }
 
-h1,p{
+.content h1,p{
     text-align:center ;
     text-transform: capitalize;
 }
@@ -48,7 +54,7 @@ h1{
     margin-bottom: 60px;
 }
 
-h1::after{
+.content h1::after{
     content: '';
     display: block;
     width: 100px;
@@ -109,4 +115,44 @@ svg:hover{
 .account a{
     text-decoration: none;
     color: green;
+}
+
+.account a:hover{
+    text-decoration: underline;
+}
+
+.container--2{
+    background-color: #fff;
+    width: 30%;
+    margin: auto;
+    padding: 20px 50px;
+}
+
+.svg{
+    height: 24px;
+    width: 24px;
+    margin-bottom: 8px;
+}
+
+.heading-1{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+input{
+    margin: 2px auto 16px auto;
+    width: 304px;
+    height: 56px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: none;
+}
+
+.warning{
+    margin: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
